@@ -1,0 +1,38 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": ["plugin:react/recommended", "prettier","eslint-config-prettier"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "react-hooks", "import"],
+  "rules": {
+    "max-len": ["error", { "code": 120 }],
+    "react/jsx-filename-extension": ["off"],
+    "react/jsx-props-no-spreading": ["off"],
+    "react/no-array-index-key": ["off"],
+    "react/forbid-prop-types": ["off"],
+    "import/no-unresolved": "off",
+    "import/prefer-default-export": "off",
+    "import/no-cycle": "off",
+    "no-param-reassign" : "off",
+    "camelcase": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"],
+        "alias": {
+          "src": "./src/"
+        }
+      }
+    }
+  }
+}
