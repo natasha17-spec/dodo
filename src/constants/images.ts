@@ -1,7 +1,9 @@
 import DIABLO from "../assets/pizza/diablo.jpeg"
 
 const IMAGES = {
-    DIABLO,
+    DIABLO: {
+        src: DIABLO
+    },
 }
 export default {
     ...IMAGES

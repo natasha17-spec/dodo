@@ -7,6 +7,8 @@ type InitialState = {
 
 const initialState: InitialState = {
     pizza: {
+        picture:'',
+        name: '',
         additives: [],
         composition: [],
         size:

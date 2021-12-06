@@ -1,3 +1,52 @@
-.df {
+@import 'src/styles/theme';
+
+.pizza {
   display: flex;
+  flex-flow: column;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  cursor: pointer;
+  width: 292px;
+  margin-right: 37px;
+
+  .main {
+    margin: 0;
+    width: 100%;
+    font-size: rem(14);
+    line-height: 20px;
+    color: $pizzaDescription;
+    font-weight: $fw400;
+
+    &__title {
+      margin: 8px 0;
+      color: $mainColor;
+      font-size: $fontSize20;
+      font-weight: $fw500;
+      line-height: 24px;
+    }
+
+    &__composition {
+      font-size: $fontSize14;
+      line-height: 20px;
+    }
+
+    &__picture {
+      width: 95%;
+      margin-left: 5%;
+    }
+
+    &__img {
+      width: 277px;
+      height: 277px;
+      margin: 0;
+      position: relative;
+      border-radius: 12px;
+      top: 0;
+
+      &:hover {
+        transition: top 150ms ease-out 0s;
+      }
+    }
+  }
 }

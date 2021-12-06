@@ -10,7 +10,9 @@ export type Size = {
 }
 
 export type Pizza = {
+    name: '',
+    picture:'',
     additives: string[],
     composition: string[],
-    size: Size[]
+    size: Size[],
 }
