@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import '../src/styles/_normalize.scss';
 import firebase from 'firebase/compat';
+import {store} from './store/store';
+import {Provider} from 'react-redux';
 
 
 const firebaseConfig = {
@@ -18,10 +20,8 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig)
 ReactDOM.render(
-    <React.StrictMode>
-        <App/>
-    </React.StrictMode>,
+    <Provider store={store}>
+        <App />
+    </Provider>,
     document.getElementById('root')
-);
-
-
+)

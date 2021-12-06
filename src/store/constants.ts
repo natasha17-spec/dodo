@@ -1,0 +1,1 @@
+export type GET_PIZZA = 'dodo/GET_PIZZA'

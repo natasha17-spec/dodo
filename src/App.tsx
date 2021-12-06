@@ -1,31 +1,23 @@
 import React, {useEffect} from 'react';
-import './App.css';
-import firebase from 'firebase/compat';
-
-
+import './App.module.scss';
+import {useDispatch, useSelector} from 'react-redux'
+import {getPizzaTH} from './store/redusers/mainReducer';
+import {AppStateType} from './store/store';
+import {Pizza} from './store/modules/modules';
 
 function App() {
-    useEffect(() => {
-        const db = firebase.database();
-        debugger
-        console.log(db)
-    }, [])
+
+    // const dispatch = useDispatch();
+    // const pizza = useSelector<AppStateType, Pizza>(state => state.main.pizza)
+    // useEffect(() => {
+    //     dispatch(getPizzaTH)
+    // }, [])
     return (
         <div className="App">
+
             <header className="App-header">
-                <p>
-                    Edit <code>src/App.tsx</code> and save to reload.
-                </p>
 
 
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
             </header>
         </div>
     );
