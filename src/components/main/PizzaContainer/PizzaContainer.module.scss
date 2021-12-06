@@ -1,0 +1,15 @@
+@import 'src/styles/theme';
+
+.pizza-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 80vw;
+
+  &__title {
+    width: 100%;
+    color: $mainColor;
+    font-size: rem(24);
+    margin: 32px 0;
+  }
+}

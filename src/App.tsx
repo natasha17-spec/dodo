@@ -1,24 +1,14 @@
-import React, {useEffect} from 'react';
-import './App.module.scss';
-import {useDispatch, useSelector} from 'react-redux'
-import {getPizzaTH} from './store/redusers/mainReducer';
-import {AppStateType} from './store/store';
-import {Pizza} from './store/modules/modules';
+import React from 'react';
+import PizzaContainer from './components/main/PizzaContainer/PizzaContainer';
+import './App.scss';
+
 
 function App() {
-
-    // const dispatch = useDispatch();
-    // const pizza = useSelector<AppStateType, Pizza>(state => state.main.pizza)
-    // useEffect(() => {
-    //     dispatch(getPizzaTH)
-    // }, [])
     return (
-        <div className="App">
-
-            <header className="App-header">
-
-
-            </header>
+        <div className='App'>
+            <main className="main">
+                <PizzaContainer/>
+            </main>
         </div>
     );
 }
